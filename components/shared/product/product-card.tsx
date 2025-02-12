@@ -2,8 +2,9 @@ import {Card, CardContent, CardTitle} from '@/components/ui/card'
 import Image from 'next/image'
 import Link from 'next/link'
 import ProductPrice from './product-price'
+import {type ProductType} from '@/types'
 
-const ProductCard = ({product}: {product: any}) => {
+const ProductCard = ({product}: {product: ProductType}) => {
     return (
         <Card className="w-full max-w-sm overflow-hidden">
             <CardTitle className="p-0  items-center ">
